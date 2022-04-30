@@ -1,0 +1,12 @@
+.product-container{
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.product-container img {
+    margin-top: 10px;
+    width: 75%;
+    height: 250px;
+}

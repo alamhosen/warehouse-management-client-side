@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Quest Nutrition- High Protein, 2.12 Ounce Bars, 12 Count",
+        "price": "20.99",
+        "quantity": 3,
+        "description": "Chocolate Chip Cookie Dough: No other protein bar tastes like sneaking a spoonful of cookie dough straight from the bowl that's why the Chocolate Chip Cookie Dough Quest Bar is one of our best-selling bars.",
+        "img": "https://i.ibb.co/r6XRKSf/1.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 2,
+        "name": "Clorox ToiletWand Disposable Toilet Cleaning System",
+        "price": "8.99",
+        "quantity": 3,
+        "description": "Clorox ToiletWand Disposable Toilet Cleaning System is a convenient way to a quick clean toilet. The starter kit contains one wand, 6 refills and 1 storage caddy to get you started on a deeper clean. ",
+        "img": "https://i.ibb.co/1ZytLZp/2.jpg",
+        "supplier_name": "Alam Hosen" 
+    },
+    {
+        "id": 3,
+        "name": "Frito-Lay Variety Pack, Party Mix, 40 Count",
+        "price": "20.49",
+        "quantity": 5,
+        "description": "These much loved treats are fun to enjoy at lunch, as an after school snack, or party refreshment. ",
+        "img": "https://i.ibb.co/pdJkpCd/3.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 4,
+        "name": "Vita Coco Coconut Water, Pure Organic - 11.1 Oz (Pack Of 12)",
+        "price": "18.99",
+        "quantity": 10,
+        "description": "Vita Coco is nature's best sports drink. It's packed with the electrolytes and nutrients you need after a sweat, without the baggage of artificial ingredients. ",
+        "img": "https://i.ibb.co/r0gtDPM/4.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 5,
+        "name": "Reusable Grocery Shopping Box Bags (3 Pack - Gray). Large",
+        "price": "28.99",
+        "quantity": 8,
+        "description": "Creative Green Life Box Bags are a wonderful alternative to disposable bags! Designed to hold a lot without being overloaded at the checkout counter.",
+        "img": "https://i.ibb.co/WGRNVpT/5.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 6,
+        "name": "FIJI Natural Artesian Water, 16.9 Fl Oz (Pack of 24)",
+        "price": "21.41",
+        "quantity": 12,
+        "description": "Case includes 24, 500mL (16.9oz) bottles of FIJI Water. The 500mL size is perfect for everyday on-the-go hydration.",
+        "img": "https://i.ibb.co/CKqV3Dh/6.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 7,
+        "name": "IZZE Sparkling Juice, 4 Flavor Variety Pack, 8.4 Fl Oz (24 Count)",
+        "price": "14.80",
+        "quantity": 14,
+        "description": "Add a splash of Brighthearted fun to any occasion with IZZE Sparkling Juice. This delectable drink is 70% pure fruit juice and a splash of sparkling water.",
+        "img": "https://i.ibb.co/fpMw2Sb/7.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 8,
+        "name": "California Bounty Fruit Gift Basket",
+        "price": "59.95",
+        "quantity": 10,
+        "description": "3 D'Anjou Pears, (Note that this gift ships with Comice Pears from our own estate orchards between October through January) 1 Red D'Anjou Pear, 2 Beurre Bosc Pears, 2 Braeburn Apples, 1 Granny Smith Apple",
+        "img": "https://i.ibb.co/KWD757j/8.jpg",
+        "supplier_name": "Alam Hosen"
+    },
+    {
+        "id": 9,
+        "name": "Mango Yellow Conventional, 1 Each",
+        "price": "1.69",
+        "quantity": 13,
+        "description": "Selected and stored fresh. Sourced with high quality standards. Recommended to wash before consuming. Delicious on their own as a healthy snack or as part of a recipe.",
+        "img": "https://i.ibb.co/rkNfBcr/9.jpg",
+        "supplier_name": "Alam Hosen"
+    }
+    
+]
+
+
+
+
+
+
+
+
