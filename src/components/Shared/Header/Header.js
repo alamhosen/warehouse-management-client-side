@@ -12,7 +12,7 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <div className='fixed-top'>
+        <div className=''>
             <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Golden Grocery</Navbar.Brand>

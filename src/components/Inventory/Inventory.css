@@ -1,0 +1,12 @@
+.inventory-container{
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border: none;
+
+}
+
+.inventory-container img {
+    margin-top: 10px;
+    width: 50%;
+}
