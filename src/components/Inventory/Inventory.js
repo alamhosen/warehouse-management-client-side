@@ -7,8 +7,7 @@ const Inventory = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({});
     const { _id, name, price, quantity, description, img, supplier_name } = product;
-
-    const [delivered, setDelivered] = useState(0);
+    
     const newQuantity = quantity;
 
     useEffect(() => {

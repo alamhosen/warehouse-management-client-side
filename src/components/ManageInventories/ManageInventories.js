@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, ListGroup, Row } from 'react-bootstrap';
-import ManageInventory from '../ManageInventory/ManageInventory';
+import { useNavigate } from 'react-router-dom';
+import './ManageInventories.css'
 
 const ManageInventories = () => {
     const [products, setProducts] = useState([]);
+    const navigate = useNavigate();
+
+
     useEffect(() => {
         fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/myitems')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+    }, []);
+
+
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
@@ -26,11 +38,15 @@ const ManageInventories = () => {
         }
     }
 
+    const navigateToAddItem = () =>{
+        navigate ('/additem');
+    }
+
     return (
-        <div className='container'>
+        <div className='container inventories-container'>
             <div className='d-flex align-items-center justify-content-center'>
             <h2 className='text-center my-4'>Manage Inventories</h2>
-            <button className='btn btn-primary ms-2'>Add new item</button>
+            <button onClick={navigateToAddItem} className='btn btn-primary ms-2'>Add new item</button>
             </div>
             
             {
@@ -47,13 +63,6 @@ const ManageInventories = () => {
                                     <button onClick={() => handleDelete(product._id)} className='btn btn-danger'>Delete Item</button>                  
                             </ListGroup.Item>
                         </ListGroup>
-                        <Container>
-                            <Row>
-                                <Col>
-                                    
-                                </Col>
-                            </Row>
-                        </Container>
                     </div>)
             }
         </div>
