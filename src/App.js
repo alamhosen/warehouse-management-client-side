@@ -8,6 +8,7 @@ import Login from './components/Login/Login/Login';
 import RequireAuth from './components/Login/Login/RequireAuth/RequireAuth';
 import Register from './components/Login/Register/Register';
 import ManageInventories from './components/ManageInventories/ManageInventories';
+import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import MyItems from './MyItems/MyItems';
@@ -41,6 +42,7 @@ function App() {
             <MyItems></MyItems>
           </RequireAuth>
         }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>

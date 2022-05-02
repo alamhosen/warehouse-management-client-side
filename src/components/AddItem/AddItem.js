@@ -18,7 +18,6 @@ const AddItem = () => {
     const addItem = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
-        console.log(email);
         const name = nameRef.current.value;
         const price = priceRef.current.value;
         const quantity = quantityRef.current.value;
@@ -32,7 +31,6 @@ const AddItem = () => {
         axios.post(url, data)
         .then(response =>{
             const {data} = response;
-            console.log(data);
             if(data.insertedId){
                 toast('Your Item Added!');
                 // event.target.reset();
