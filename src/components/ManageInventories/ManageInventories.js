@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, ListGroup, Row } from 'react-bootstrap';
+import { ListGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './ManageInventories.css'
 
@@ -13,14 +13,6 @@ const ManageInventories = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/myitems')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, []);
-
-
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');

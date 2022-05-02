@@ -11,7 +11,6 @@ const MyItems = () => {
     useEffect ( () =>{
         const getItems = async() =>{
             const email = user.email;
-            console.log(email);
             const url = `http://localhost:5000/myitems?email=${email}`;
             const {data} = await axios.get(url);
             setMyItems(data)
