@@ -21,7 +21,6 @@ const Register = () => {
     }
 
     if (user) {
-        console.log(user);
     }
 
     const handleRegister = async (event) => {
