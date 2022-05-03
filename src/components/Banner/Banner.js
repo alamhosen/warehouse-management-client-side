@@ -15,8 +15,8 @@ const Banner = () => {
                         alt="golden grocery"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Convenient Product Comparison</h3>
+                        <p>Shoppers can seamlessly view and compare products they want to buy and make informed purchasing decisions.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Smooth Order Management</h3>
+                        <p>Store owners can check order delivery status and customer detail and can. Customers can also track their order status.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Advanced Product Search</h3>
+                        <p>Customers can easily search for any product they're looking for .</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
