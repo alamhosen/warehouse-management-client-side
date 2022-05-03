@@ -15,7 +15,7 @@ const AddItem = () => {
     const descriptionRef = useRef('');
     const imgRef = useRef('');
 
-    const addItem = (event) => {
+    const handleAddItem = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const name = nameRef.current.value;
@@ -33,24 +33,9 @@ const AddItem = () => {
             const {data} = response;
             if(data.insertedId){
                 toast('Your Item Added!');
-                // event.target.reset();
+                event.target.reset();
             }
         })
-        // fetch(url, {
-        //     method : 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // .then(res => res.json())
-        // .then(result => {
-        //     console.log(result);
-        // })
-        // if(data.insertedId){
-        //     toast('Your order is booked!!!');
-        //     event.target.reset();
-        // }
 
     }
     return (
@@ -86,7 +71,7 @@ const AddItem = () => {
                         <Form.Control ref={imgRef} type="text" placeholder="Image url" required/>
                     </Form.Group>
 
-                    <Button onClick={addItem} variant="primary" type="submit">
+                    <Button onClick={handleAddItem} variant="primary" type="submit">
                         Add Item
                     </Button>
                 </Form>
