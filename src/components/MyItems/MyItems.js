@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, ListGroup, Row } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import {useNavigate } from 'react-router-dom';
-import auth from '../firebase.init';
+import auth from '../../firebase.init';
 
 const MyItems = () => {
     const [user] = useAuthState(auth);

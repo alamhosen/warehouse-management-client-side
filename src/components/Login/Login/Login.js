@@ -47,8 +47,6 @@ const Login = () => {
         navigate('/register')
     }
 
-    // navigate user to home page
-
     if (user) {
         // navigate(from, { replace: true });
     }
@@ -72,7 +70,7 @@ const Login = () => {
             <h2 className='text-center text-primary my-3'>Please Login</h2>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
+                    <Form.Control ref={emailRef} type="email" placeholder="Your email" required/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -83,9 +81,9 @@ const Login = () => {
                 </Button>
             </Form>
             {errorElement}
-            <p className='pt-3'>New to Golden Grocery? <Link to='/register' className='text-primary pu-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link>
+            <p className='pt-3 text-center'>New to Golden Grocery? <Link to='/register' className='text-primary pu-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link>
             </p>
-            <p className='pt-3'>Forget Password? <button className='btn btn-link text-primary pu-auto text-decoration-none' onClick={resetPassword}>Reset Password</button>
+            <p className='text-center'>Forget Password? <button className='btn btn-link text-primary pu-auto text-decoration-none' onClick={resetPassword}>Reset Password</button>
             </p>
             <SocialLogin></SocialLogin>
             <ToastContainer />

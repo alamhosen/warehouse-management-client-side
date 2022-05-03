@@ -32,7 +32,6 @@ const Register = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        console.log('Updated profile');
         navigate('/home');
     }
     return (
@@ -49,7 +48,7 @@ const Register = () => {
                     className='btn btn-primary w-50 mx-auto mt-3' type="submit"
                     value="Register" />
             </form>
-            <p>Already have an account? <Link to='/login' className='text-primary pu-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
+            <p className='text-center'>Already have an account? <Link to='/login' className='text-primary pu-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
             </p>
             <SocialLogin></SocialLogin>
         </div>

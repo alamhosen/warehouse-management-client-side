@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 import Product from '../Product/Product';
 import './Products.css'
 
 const Products = () => {
     const [products, setProducts] = useState([]);
+    const [isLoading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    useEffect(() =>{
+    useEffect(() => {
+        setLoading(true)
         fetch('http://localhost:5000/product')
-        .then(res => res.json())
-        .then (data => setProducts(data))
+            .then(res => res.json())
+            .then(data => setProducts(data))
+        setLoading(false);
     }, []);
 
-    const manageInventories = () =>{
+    if (isLoading === true) {
+        return <Loading></Loading>
+    }
+
+    const manageInventories = () => {
         navigate('manageinventories');
     }
     return (
@@ -22,8 +30,8 @@ const Products = () => {
             <div className='products-container mb-3'>
                 {
                     products.slice(0, 6).map(product => <Product
-                    key={product._id}
-                    product={product}
+                        key={product._id}
+                        product={product}
                     ></Product>)
                 }
             </div>

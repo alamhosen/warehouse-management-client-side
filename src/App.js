@@ -2,16 +2,17 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 import AddItem from './components/AddItem/AddItem';
+import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login/Login';
-import RequireAuth from './components/Login/Login/RequireAuth/RequireAuth';
+import RequireAuth from './components/Login/RequireAuth/RequireAuth';
 import Register from './components/Login/Register/Register';
 import ManageInventories from './components/ManageInventories/ManageInventories';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
-import MyItems from './MyItems/MyItems';
+import MyItems from './components/MyItems/MyItems'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <MyItems></MyItems>
           </RequireAuth>
         }></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

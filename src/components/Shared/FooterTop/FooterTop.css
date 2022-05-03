@@ -1,0 +1,11 @@
+.footer-top-container a {
+    text-decoration: none;
+    color: black;
+}
+.footer-top-container a:hover{
+    color: rgb(40, 40, 201);
+
+}
+.footer-top-container {
+    
+}
