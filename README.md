@@ -1,4 +1,27 @@
-# Getting Started with Create React App
+# [Golden Grocery]()
+
+## What I have done in this project?
+* I have used react-bootstrap navbar to create a responsive navbar.
+* React bootstrap carousel used to create image slider.
+* React bootstrap form used to create login, registration, and checkout page.
+* React bootstrap card used to show services section.
+* I have used react firebase to make authentication in the login and register page.
+* I have used Mongodb to create server
+* I have used JWT to create token and verify user to authorization. 
+* I have used firebase to host client side
+* I have used heroku to host server side
+
+## Which technologies I have used in this project?
+* React.js
+* React Bootstrap
+* React router
+* Google firebase
+* React firebase hooks
+* React-Toastify
+* Mongodb (for server)
+* Axios
+* JWT 
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
