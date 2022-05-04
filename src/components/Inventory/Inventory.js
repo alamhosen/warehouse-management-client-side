@@ -31,7 +31,6 @@ const Inventory = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log('success', data);
                 alert('Quantity updated successfully!')
             })
 
@@ -51,7 +50,6 @@ const Inventory = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log('success', data);
                 alert('Quantity updated successfully!')
             })
 

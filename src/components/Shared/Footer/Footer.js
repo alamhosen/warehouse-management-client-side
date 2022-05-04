@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='container text-center mt-5 mg'>
             <FooterTop></FooterTop>
-            <p>Copyright © {year} | <strong>Golden Grocer</strong> | All rights reserved</p>
+            <p>Copyright © {year} | <a style={{textDecoration:'none'}} href="https://golden-grocery.web.app/"><strong>Golden Grocer</strong></a> | All rights reserved</p>
 
         </div>
     );

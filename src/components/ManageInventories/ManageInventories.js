@@ -7,7 +7,6 @@ const ManageInventories = () => {
     const [products, setProducts] = useState([]);
     const navigate = useNavigate();
 
-
     useEffect(() => {
         fetch('https://infinite-peak-24257.herokuapp.com/product')
             .then(res => res.json())
@@ -23,7 +22,6 @@ const ManageInventories = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining);
                 })
