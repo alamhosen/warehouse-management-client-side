@@ -58,7 +58,7 @@ const Inventory = () => {
     return (
         <div className='inventory-container d-flex mx-auto mt-5'>
             <CardGroup >
-                <Card className='border-0 mt-4'>
+                <Card className='border-0'>
                     <div><Card.Img variant="top" src={img} /></div>
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
