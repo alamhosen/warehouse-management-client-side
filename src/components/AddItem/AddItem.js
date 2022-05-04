@@ -26,7 +26,7 @@ const AddItem = () => {
         const img = imgRef.current.value;
 
         const data = {email, name, price, quantity, description, supplier_name, img }
-        const url = (`http://localhost:5000/myitems`);
+        const url = (`https://infinite-peak-24257.herokuapp.com/myitems`);
 
         axios.post(url, data)
         .then(response =>{

@@ -38,7 +38,7 @@ const Login = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         await signInWithEmailAndPassword(email, password);
-        const {data} = await axios.post('http://localhost:5000/login', {email});
+        const {data} = await axios.post('https://infinite-peak-24257.herokuapp.com/login', {email});
         localStorage.setItem('accessToken', data.accessToken);
         navigate(from, { replace: true });
     }
@@ -68,6 +68,7 @@ const Login = () => {
     return (
         <div className='container mx-auto w-50'>
             <h2 className='text-center text-primary my-3'>Please Login</h2>
+            <SocialLogin></SocialLogin>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Your email" required/>
@@ -76,7 +77,7 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
                 </Form.Group>
-                <Button className='mx-auto w-50 d-block' onClick={handleSubmit} variant="primary" type="submit">
+                <Button className='mx-auto w-75 d-block' onClick={handleSubmit} variant="primary" type="submit">
                     Login
                 </Button>
             </Form>
@@ -85,7 +86,7 @@ const Login = () => {
             </p>
             <p className='text-center'>Forget Password? <button className='btn btn-link text-primary pu-auto text-decoration-none' onClick={resetPassword}>Reset Password</button>
             </p>
-            <SocialLogin></SocialLogin>
+            
             <ToastContainer />
         </div>
     );

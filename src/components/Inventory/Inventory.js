@@ -11,7 +11,7 @@ const Inventory = () => {
     const newQuantity = quantity;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${productId}`)
+        fetch(`https://infinite-peak-24257.herokuapp.com/product/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, []);
@@ -21,7 +21,7 @@ const Inventory = () => {
         // event.preventDefault();
         const quantity = parseInt(newQuantity) - 1;
         const updateQuantity = { quantity }
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://infinite-peak-24257.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -41,7 +41,7 @@ const Inventory = () => {
         // event.preventDefault();
         const quantity = parseInt(newQuantity) + parseInt(event.target.quantity.value);
         const updateQuantity = { quantity }
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://infinite-peak-24257.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

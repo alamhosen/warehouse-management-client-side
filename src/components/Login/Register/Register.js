@@ -37,6 +37,7 @@ const Register = () => {
     return (
         <div className='register-form'>
             <h2 className='text-center text-primary my-3'>Please Register</h2>
+            <SocialLogin></SocialLogin>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your name' />
                 <input type="email" name="email" id="" placeholder='Email address' required />
@@ -50,7 +51,7 @@ const Register = () => {
             </form>
             <p className='text-center'>Already have an account? <Link to='/login' className='text-primary pu-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
             </p>
-            <SocialLogin></SocialLogin>
+            
         </div>
     );
 };

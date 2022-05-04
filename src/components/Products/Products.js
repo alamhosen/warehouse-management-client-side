@@ -11,7 +11,7 @@ const Products = () => {
 
     useEffect(() => {
         setLoading(true)
-        fetch('http://localhost:5000/product')
+        fetch('https://infinite-peak-24257.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProducts(data))
         setLoading(false);
